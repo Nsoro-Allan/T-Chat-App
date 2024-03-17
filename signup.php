@@ -80,7 +80,7 @@ if(isset($_POST['signup'])){
             <label>Tel:</label>
             <input type="tel" name="tel" placeholder="Enter your tel..." required>
             <button type="submit" name="signup">Sign Up</button>
-            <p>Already Have An Account? <a href="./signin.php">Sign In.</a></p>
+            <p>Already Have An Account? <a href="./login.php">Sign In.</a></p>
             </form>
     </div>
 </body>

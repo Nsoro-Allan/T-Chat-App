@@ -3,7 +3,7 @@ session_start();
 include("connection.php");
 
 if(!isset($_SESSION['chat_username'])){
-    header("Location: index.php?msg=Loggin First...");
+    header("Location: login.php?msg=Loggin First...");
 }
 
 ?>
