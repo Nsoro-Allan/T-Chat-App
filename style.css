@@ -16,6 +16,12 @@ button {
   color: #fff;
 }
 
+input {
+  background: black;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -39,6 +45,8 @@ button {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 20px;
 }
+
+/* Chat Container Starts Here */
 
 .main-container {
   width: 50%;
@@ -78,6 +86,13 @@ button {
   font-weight: bold;
   font-size: 0.8rem;
   margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container .details a:hover {
+  background: #ffffff9e;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .main-container .title {
@@ -99,7 +114,7 @@ button {
 }
 
 .main-container .title a h1 img {
-  width: 17%;
+  width: 13%;
   margin-right: 5px;
 }
 
@@ -108,7 +123,7 @@ button {
   background: #fff;
   border-radius: 50px;
   width: 30%;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .main-container .content {
@@ -144,15 +159,17 @@ button {
 .main-container .content .content-card .card-title img {
   width: 8%;
   border-radius: 6px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .main-container .content .content-card .card-title h4 {
   color: #ffffffae;
+  font-style: italic;
 }
 
 .main-container .content .content-card .card-title h4 span {
   color: #fff;
+  font-style: normal;
 }
 
 .main-container .content .content-card .card-content {
@@ -232,3 +249,114 @@ button {
 .main-container .end form button img {
   width: 35%;
 }
+
+/* Chat Container Ends Here */
+
+/* Login Container Starts Here */
+.login-container {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 96dvh;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.login-container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container .title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-container .title a h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-container .title a h1 img {
+  width: 13%;
+  margin-right: 5px;
+}
+
+.login-container .title .line {
+  padding: 3px;
+  background: #fff;
+  border-radius: 50px;
+  width: 30%;
+  margin-top: 5px;
+}
+
+.login-container form {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-container form label {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.login-container form input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.login-container form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.login-container form button:hover {
+  cursor: pointer;
+  background: #ffffff9e;
+  transition: 0.3s ease-in-out;
+}
+
+.login-container form p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.login-container form p a {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.login-container form p a:hover {
+  cursor: pointer;
+  color: #ffffff9e;
+  transition: 0.3s ease-in-out;
+}
+/* Login Container Ends Here */
