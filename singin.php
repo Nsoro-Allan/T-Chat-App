@@ -5,6 +5,48 @@ include("connection.php");
 if(isset($_POST['login'])){
     $username=mysqli_real_escape_string($con,$_POST['username']);
     $password=mysqli_real_escape_string($con,$_POST['password']);
+
+    $login=$con->query("SELECT * FROM `users`");
+    if(mysqli_num_rows($login)>0){
+        while($row=mysqli_fetch_assoc($login)){
+            if($username == $row['username'] && $password == $row['password']){
+                $_SESSION['chat_username'] = $username;
+                header("Location: chat.php");
+            }
+            else if($username != $row['username'] && $password == $row['password']){
+                echo
+                '
+                    <script>
+                        alert("Invalid Username...");
+                    </script>
+                ';
+            }
+            else if($username == $row['username'] && $password != $row['password']){
+                echo
+                '
+                    <script>
+                        alert("Invalid Password...");
+                    </script>
+                ';
+            }
+            else{
+                echo
+                '
+                    <script>
+                        alert("Invalid Username and  Password...");
+                    </script>
+                ';
+            }
+        }
+    }
+    else{
+        echo
+        '
+            <script>
+                alert("No Records Found in database...");
+            </script>
+        ';
+    }
 }
 
 ?>

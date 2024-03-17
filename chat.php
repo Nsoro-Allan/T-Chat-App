@@ -1,3 +1,9 @@
+<?php
+include("connection.php");
+include("sessions.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +21,7 @@
         </div>
         <div class="details">
             <h4>Logged In As @AllanCorp</h4>
-            <a href="#">SignOut</a>
+            <a href="./logout.php">SignOut</a>
         </div>
         <div class="content">
             <div class="content-card">
