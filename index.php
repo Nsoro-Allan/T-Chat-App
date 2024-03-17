@@ -15,15 +15,16 @@
         </div>
         <div class="details">
             <h4>Logged In As @AllanCorp</h4>
+            <a href="#">SignOut</a>
         </div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <div class="content-card">
+                <div class="card-title">
+                    <img src="./imgs/img1.png" alt="Avatar">
+                    <h4>Sent by <span>@Nsoro Allan</span></h4>
+                </div>
+
+            </div>
         </div>
         <div class="end">
             <form action="" method="post">
