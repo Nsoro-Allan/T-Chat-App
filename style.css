@@ -12,6 +12,30 @@ body {
   padding: 10px;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 12px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  border: 2px solid #fff;
+  background: black;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+}
+
 .main-container {
   width: 50%;
   position: absolute;
@@ -25,6 +49,19 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
+  gap: 10px;
+}
+
+.main-container .details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.main-container .details h4 {
+  font-style: italic;
 }
 
 .main-container .title {
@@ -60,8 +97,7 @@ body {
 
 .main-container .content {
   padding: 10px 15px;
-  border-style: dashed;
-  border: 2px dashed #fff;
+  border: 2px solid #fff;
   width: 100%;
   border-radius: 20px;
   height: 70dvh;
@@ -71,10 +107,6 @@ body {
 }
 
 .main-container .end {
-  /* padding: 10px;
-  border-style: dashed;
-  border: 2px dashed #fff; */
-  /* border-radius: 50px; */
   width: 100%;
 }
 
@@ -84,6 +116,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-top: 5px;
 }
 
 .main-container .end form input {

@@ -13,12 +13,22 @@
             <a href="./index.php"><h1><img src="./imgs/icon.ico" alt=""> T - Chat</h1></a>
             <div class="line"></div>
         </div>
+        <div class="details">
+            <h4>Logged In As @AllanCorp</h4>
+        </div>
         <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti totam laborum, magnam quo nostrum ullam corrupti esse, at expedita ea facere ex commodi aut exercitationem consequuntur consequatur natus nemo?</p><br>
         </div>
         <div class="end">
             <form action="" method="post">
-                <input type="text" name="message" placeholder="Type your message here...">
-                <button type="submit" name="send_message"><img src="./imgs/send.ico" alt=""></button>
+                <input type="text" name="message" placeholder="Type your message here..." required>
+                <button type="submit" name="send_message"><img src="./imgs/send.ico" alt="Send"></button>
             </form>
         </div>
     </div>
