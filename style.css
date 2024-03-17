@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  background: black;
+  padding: 10px;
+}
+
+.main-container {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 96dvh;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.main-container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-container .title a h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-container .title a h1 img {
+  width: 17%;
+  margin-right: 10px;
+}
+
+.main-container .title .line {
+  padding: 3px;
+  background: #fff;
+  border-radius: 50px;
+  width: 30%;
+  margin-top: 3px;
+}
+
+.main-container .content {
+  padding: 10px 15px;
+  border-style: dashed;
+  border: 2px dashed #fff;
+  width: 100%;
+  border-radius: 20px;
+  height: 70dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container .end {
+  /* padding: 10px;
+  border-style: dashed;
+  border: 2px dashed #fff; */
+  /* border-radius: 50px; */
+  width: 100%;
+}
+
+.main-container .end form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.main-container .end form input {
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  width: 90%;
+  background: black;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.main-container .end form button {
+  border: none;
+  background: black;
+  color: #fff;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.main-container .end form button:hover {
+  cursor: pointer;
+  border: 4px solid #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.main-container .end form button img {
+  width: 35%;
+}
