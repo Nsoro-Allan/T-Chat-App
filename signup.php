@@ -33,7 +33,7 @@ if(isset($_POST['signup'])){
     
                 if($insert){
                     $_SESSION['chat_username'] = $username;
-                    header("location: chat.php");
+                    header("location: chat");
                 } else {
                     echo
                     '
@@ -67,7 +67,7 @@ if(isset($_POST['signup'])){
 <body>
     <div class="login-container">
         <div class="title">
-            <a href="./index.php"><h1><img src="./imgs/icon.ico" alt="Sign Up"> T - Chat - [SignUp]</h1></a>
+            <a href="./signup"><h1><img src="./imgs/icon.ico" alt="Sign Up"> T - Chat - [SignUp]</h1></a>
             <div class="line"></div>
         </div>
             <form action="" method="post" enctype="multipart/form-data">
@@ -80,7 +80,7 @@ if(isset($_POST['signup'])){
             <label>Tel:</label>
             <input type="tel" name="tel" placeholder="Enter your tel..." required>
             <button type="submit" name="signup">Sign Up</button>
-            <p>Already Have An Account? <a href="./login.php">Sign In.</a></p>
+            <p>Already Have An Account? <a href="./login">Sign In.</a></p>
             </form>
     </div>
 </body>

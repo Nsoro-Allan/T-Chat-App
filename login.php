@@ -12,7 +12,7 @@ if(isset($_POST['login'])){
         while($row=mysqli_fetch_assoc($login)){
             if($username == $row['username'] && $hashed_password == $row['password']){
                 $_SESSION['chat_username'] = $username;
-                header("Location: chat.php");
+                header("Location: chat");
             }
             else if($username != $row['username'] && $hashed_password == $row['password']){
                 echo
@@ -64,7 +64,7 @@ if(isset($_POST['login'])){
 <body>
     <div class="login-container">
         <div class="title">
-            <a href="./index.php"><h1><img src="./imgs/icon.ico" alt="Sign In"> T - Chat - [Login]</h1></a>
+            <a href="./login"><h1><img src="./imgs/icon.ico" alt="Sign In"> T - Chat - [Login]</h1></a>
             <div class="line"></div>
         </div>
             <form action="" method="post">
@@ -73,7 +73,7 @@ if(isset($_POST['login'])){
             <label>Password:</label>
             <input type="password" name="password" placeholder="Enter your password..." required>
             <button type="submit" name="login">Login</button>
-            <p>Don't Have An Account? <a href="./signup.php">SignUp.</a></p>
+            <p>Don't Have An Account? <a href="./signup">SignUp.</a></p>
             </form>
     </div>
 </body>
