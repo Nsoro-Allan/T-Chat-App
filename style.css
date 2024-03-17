@@ -12,6 +12,10 @@ body {
   padding: 10px;
 }
 
+button {
+  color: #fff;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -150,6 +154,34 @@ body {
 
 .main-container .content .content-card .card-title h4 span {
   color: #fff;
+}
+
+.main-container .content .content-card .card-content {
+  margin-top: 5px;
+}
+
+.main-container .content .content-card .card-end {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.main-container .content .content-card .card-end button {
+  padding: 10px 15px;
+  background: black;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container .content .content-card .card-end button:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 
 .main-container .end {
