@@ -2,7 +2,7 @@
 include("connection.php");
 include("sessions.php");
 
-$uname=$_SESSION['chat_username'];
+$uname=$_GET['username'];
 
 // Select Data
 $select=$con->query("SELECT * FROM `users` WHERE `username`='$uname'");
