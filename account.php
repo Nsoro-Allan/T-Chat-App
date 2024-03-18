@@ -2,6 +2,16 @@
 include("connection.php");
 include("sessions.php");
 
+$uname=$_SESSION['chat_username'];
+
+// Select Data
+$select=$con->query("SELECT * FROM `users` WHERE `username`='$uname'");
+$row=mysqli_fetch_assoc($select);
+$user_id=$row['user_id'];
+$username=$row['username'];
+$password=$row['password'];
+$profile_picture=$row['profile_picture'];
+$tel=$row['tel'];
 
 ?>
 
@@ -25,7 +35,57 @@ include("sessions.php");
             <a href="./logout.php" class="btn">SignOut</a>
         </div>
         <div class="content">
-            .account
+        <div class="account-container">
+                <div class="account-head">
+                    <img src="./uploads/<?php echo $profile_picture;?>" alt="">
+                    <h4>@<?php echo $username;?></h4>
+                </div>
+                <div class="account-content">
+                    <div class="title">
+                        <h3>All Posts</h3>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="content">
+            <?php
+            $select=$con->query("SELECT * FROM `posts` WHERE `user_id`='$user_id' ORDER BY `post_id` DESC");
+            if(mysqli_num_rows($select)>0){
+                while($row=mysqli_fetch_assoc($select)){
+                $post_date = $row['post_date'];
+                $user_id = $row['user_id'];
+                include("time_converter.php");
+
+                $view=$con->query("SELECT * FROM `users` WHERE `user_id`='$user_id'");
+                $see=mysqli_fetch_assoc($view);
+                $username=$see['username'];
+                $profile_picture=$see['profile_picture'];
+
+            ?>
+            <div class="content-card">
+                <div class="card-title">
+                    <img src="./uploads/<?php echo $profile_picture;?>" alt="Avatar">
+                    <h4>Sent by <span>@<a href="./profile"><?php echo $username;?></a> • <?php echo $formatted_time;?> ago</span></h4>
+                    <a href="delete_post.php?post_id=<?php echo $row['post_id'];?>" class="delete" alt="Delete Post..." title="Delete Post..."><img src="./imgs/delete.ico" alt=""></a>
+                </div>
+                <div class="card-content">
+                    <p><?php echo $row['post_content'];?></p>
+                </div>
+                <div class="card-end">
+                    <button>&#128077; 0</button>
+                    <button>&#128514; 0</button>
+                    <button>&#128293; 0</button>
+                    <button>&#128078; 0</button>
+                </div>
+            </div>
+            <?php        
+                }
+            }
+            else{
+                echo"<h1>No Posts Available...</h1>";
+            }
+            ?>
+        </div>
+        </div>
         </div>
     </div>
 </body>

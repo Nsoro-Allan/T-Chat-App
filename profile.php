@@ -23,7 +23,7 @@ include("sessions.php");
             <a href="./logout.php" class="btn">SignOut</a>
         </div>
         <div class="content">
-            .account
+
         </div>
     </div>
 </body>

@@ -148,6 +148,50 @@ input {
   gap: 20px;
 }
 
+.main-container .content .account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.main-container .content .account-container .account-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .content .account-container .account-head img {
+  width: 16%;
+  border-radius: 15px;
+}
+
+.main-container .content .account-container .account-head h4 {
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.main-container .content .account-container .account-content {
+  margin-top: 10px;
+  border: 2px solid #fff;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main-container .content .account-container .account-content .title {
+  padding: 10px;
+}
+
+.main-container .content .account-container .account-content .title .line {
+  width: 10%;
+}
+
 .main-container .content .content-card {
   padding: 10px 15px;
   border: 2px solid #fff;
@@ -190,6 +234,15 @@ input {
 
 .main-container .content .content-card .card-title h4 span a:hover {
   text-decoration: underline;
+}
+
+.main-container .content .content-card .card-title .delete {
+  width: 4.5%;
+  margin-left: 40%;
+}
+
+.main-container .content .content-card .card-title .delete img {
+  width: 100%;
 }
 
 .main-container .content .content-card .card-content {
@@ -410,6 +463,11 @@ input {
   .login-container {
     width: 98%;
   }
+
+  .main-container .content .content-card .card-title .delete {
+    width: 15%;
+    margin-left: 40%;
+  }
 }
 
 /* Tablet Responsiveness */
@@ -426,6 +484,10 @@ input {
   }
   .login-container {
     width: 98%;
+  }
+  .main-container .content .content-card .card-title .delete {
+    width: 4.5%;
+    margin-left: 60%;
   }
 }
 /* Responsiveness Ends Here */
