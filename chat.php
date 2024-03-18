@@ -46,8 +46,8 @@ include("sessions.php");
             <div class="line"></div>
         </div>
         <div class="details">
-            <h4>Logged In As @<?php echo $_SESSION['chat_username'];?></h4>
-            <a href="./logout.php">SignOut</a>
+            <h4>Logged In As @<a href="#"><?php echo $_SESSION['chat_username'];?></a></h4>
+            <a href="./logout.php" class="btn">SignOut</a>
         </div>
         <div class="content">
             <?php
