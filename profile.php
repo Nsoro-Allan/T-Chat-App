@@ -66,7 +66,6 @@ $tel=$row['tel'];
                 <div class="card-title">
                     <img src="./uploads/<?php echo $profile_picture;?>" alt="Avatar">
                     <h4>Sent by <span>@<a href="./profile"><?php echo $username;?></a> • <?php echo $formatted_time;?> ago</span></h4>
-                    <a href="delete_post.php?post_id=<?php echo $row['post_id'];?>" class="delete" alt="Delete Post..." title="Delete Post..."><img src="./imgs/delete.ico" alt=""></a>
                 </div>
                 <div class="card-content">
                     <p><?php echo $row['post_content'];?></p>
