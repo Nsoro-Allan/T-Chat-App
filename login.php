@@ -1,6 +1,10 @@
 <?php
 session_start();
 include("connection.php");
+// Login Verification
+if(isset($_SESSION['chat_username'])){
+    header("Location: chat");
+}
 
 if(isset($_POST['login'])){
     $username=mysqli_real_escape_string($con,$_POST['username']);
