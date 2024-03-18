@@ -73,10 +73,10 @@ include("sessions.php");
                     <p><?php echo $row['post_content'];?></p>
                 </div>
                 <div class="card-end">
-                    <button>👍 0</button>
-                    <button>😄 0</button>
-                    <button>🔥 0</button>
-                    <button>👎 0</button>
+                    <button>&#128077; 0</button>
+                    <button>&#128514; 0</button>
+                    <button>&#128293; 0</button>
+                    <button>&#128078; 0</button>
                 </div>
             </div>
             <?php        

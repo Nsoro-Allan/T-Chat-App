@@ -215,6 +215,8 @@ input {
 
 .main-container .end {
   width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .main-container .end form {
@@ -265,7 +267,7 @@ input {
 
 /* Login Container Starts Here */
 .login-container {
-  width: 50%;
+  width: 40%;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
