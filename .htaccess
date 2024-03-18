@@ -6,6 +6,7 @@ RewriteRule ^login/?$ login.php [L]
 RewriteRule ^signup/?$ signup.php [L]
 RewriteRule ^account/?$ account.php [L]
 RewriteRule ^profile/?$ profile.php [L]
+RewriteRule ^settings/?$ settings.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
