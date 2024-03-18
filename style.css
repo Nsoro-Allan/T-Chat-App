@@ -171,6 +171,7 @@ input {
 .main-container .content .content-card .card-title h4 span {
   color: #fff;
   font-style: normal;
+  text-transform: capitalize;
 }
 
 .main-container .content .content-card .card-content {
@@ -201,6 +202,15 @@ input {
   cursor: pointer;
   scale: 1.1;
   transition: 0.3s ease-in-out;
+  border: 2px solid rgb(2, 139, 253);
+}
+
+.main-container .content .content-card .card-end button:active {
+  border: 2px solid rgb(2, 139, 253);
+}
+
+.main-container .content .content-card .card-end button:focus {
+  border: 2px solid rgb(2, 139, 253);
 }
 
 .main-container .end {
@@ -361,3 +371,41 @@ input {
   transition: 0.3s ease-in-out;
 }
 /* Login Container Ends Here */
+
+/* Responsiveness Starts Here */
+
+/* Phone Responsiveness */
+@media screen and (max-width: 450px) {
+  .main-container {
+    width: 98%;
+  }
+  .main-container .content .content-card .card-title img {
+    width: 18%;
+  }
+
+  .main-container .content .content-card .card-end {
+    gap: 5px;
+  }
+
+  .login-container {
+    width: 98%;
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 1024px) {
+  .main-container {
+    width: 98%;
+  }
+  .main-container .content .content-card .card-title img {
+    width: 8%;
+  }
+
+  .main-container .content .content-card .card-end {
+    gap: 5px;
+  }
+  .login-container {
+    width: 98%;
+  }
+}
+/* Responsiveness Ends Here */
