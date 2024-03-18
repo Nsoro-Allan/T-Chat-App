@@ -46,7 +46,7 @@ include("sessions.php");
             <div class="line"></div>
         </div>
         <div class="details">
-            <h4>Logged In As @<a href="./account.php"><?php echo $_SESSION['chat_username'];?></a></h4>
+            <h4>Logged In As @<a href="./account"><?php echo $_SESSION['chat_username'];?></a></h4>
             <a href="./logout.php" class="btn">SignOut</a>
         </div>
         <div class="content">
@@ -67,7 +67,7 @@ include("sessions.php");
             <div class="content-card">
                 <div class="card-title">
                     <img src="./uploads/<?php echo $profile_picture;?>" alt="Avatar">
-                    <h4>Sent by <span>@<?php echo $username;?> • <?php echo $formatted_time;?> ago</span></h4>
+                    <h4>Sent by <span>@<a href="./profile?username=<?php echo urlencode($username);?>"><?php echo $username;?></a> • <?php echo $formatted_time;?> ago</span></h4>
                 </div>
                 <div class="card-content">
                     <p><?php echo $row['post_content'];?></p>
