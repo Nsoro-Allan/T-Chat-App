@@ -183,6 +183,15 @@ input {
   text-transform: capitalize;
 }
 
+.main-container .content .content-card .card-title h4 span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-container .content .content-card .card-title h4 span a:hover {
+  text-decoration: underline;
+}
+
 .main-container .content .content-card .card-content {
   display: flex;
   flex-direction: row;
