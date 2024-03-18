@@ -39,6 +39,7 @@ $tel=$row['tel'];
                 <div class="account-head">
                     <img src="./uploads/<?php echo $profile_picture;?>" alt="">
                     <h4>@<?php echo $username;?></h4>
+                    <a href="./chat">Go Home...</a>
                 </div>
                 <div class="account-content">
                     <div class="title">

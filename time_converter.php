@@ -10,7 +10,7 @@
     } elseif ($time_difference < 3600) {
         $formatted_time = floor($time_difference / 60) . 'm'; // minutes
     } elseif ($time_difference < 86400) {
-        $formatted_time = floor($time_difference / 3600) . 'hrs'; // hours
+        $formatted_time = floor($time_difference / 3600) . 'hr'; // hours
     } elseif ($time_difference < 604800) {
         $formatted_time = floor($time_difference / 86400) . 'd'; // days
     } elseif ($time_difference < 2419200) {
