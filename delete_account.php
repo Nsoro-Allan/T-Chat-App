@@ -36,12 +36,10 @@ $tel=$row['tel'];
         <div class="content">
         <div class="account-container">
                 <div class="account-head">
-                    <img src="./uploads/<?php echo $profile_picture;?>" alt="">
-                    <h4>@<?php echo $username;?></h4>
+                    <h1 style="text-align: center;">Are you sure you want to delete account?</h1>
                     <div class="account-head-buttons">
                     <a href="./chat">Go Home...</a>
-                    <a href="./edit_account">Edit Account Info</a>
-                    <a href="./delete_verification">Delete Account</a>
+                    <a href="./permanent_delete.php">Delete Account</a>
                     </div>
                 </div>
         </div>       

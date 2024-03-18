@@ -34,7 +34,7 @@ if(isset($_POST['login'])){
                 echo
                 '
                     <script>
-                        alert("Invalid Username and  Password...");
+                        alert("Invalid Username and Password...");
                     </script>
                 ';
             }

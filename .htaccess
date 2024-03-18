@@ -7,6 +7,9 @@ RewriteRule ^signup/?$ signup.php [L]
 RewriteRule ^account/?$ account.php [L]
 RewriteRule ^profile/?$ profile.php [L]
 RewriteRule ^settings/?$ settings.php [L]
+RewriteRule ^edit_account/?$ edit_account.php [L]
+RewriteRule ^delete_verification/?$ delete_verification.php [L]
+RewriteRule ^delete_account/?$ delete_account.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

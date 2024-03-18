@@ -1,6 +1,10 @@
 <?php
 session_start();
 include("connection.php");
+// Login Verification
+if(isset($_SESSION['chat_username'])){
+    header("Location: chat");
+}
 
 if(isset($_POST['signup'])){
         $username = mysqli_real_escape_string($con, $_POST['username']);
@@ -13,7 +17,7 @@ if(isset($_POST['signup'])){
             echo
             '
                 <script>
-                    alert("[ '.$username.' ] is already in use.<br> Please choose another username.");
+                    alert("The username you used is already in use.<br> Please choose another username.");
                 </script>
             ';
         } else {

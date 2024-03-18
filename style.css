@@ -192,6 +192,15 @@ input {
   transition: 0.3s ease-in-out;
 }
 
+.main-container .content .account-container .account-head-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .main-container .content .account-container .account-content {
   margin-top: 10px;
   border: 2px solid #fff;
