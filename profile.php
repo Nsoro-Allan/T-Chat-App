@@ -31,7 +31,7 @@ $tel=$row['tel'];
             <div class="line"></div>
         </div>
         <div class="details">
-            <h4>Logged In As @<a href="#"><?php echo $_SESSION['chat_username'];?></a></h4>
+            <h4>Logged In As @<a href="account"><?php echo $_SESSION['chat_username'];?></a></h4>
             <a href="./logout.php" class="btn">SignOut</a>
         </div>
         <div class="content">
