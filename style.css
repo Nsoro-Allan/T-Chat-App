@@ -478,6 +478,41 @@ input {
 }
 /* Login Container Ends Here */
 
+/* Edit Account Starts Here */
+.account-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 2px solid #fff;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.account-container label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.account-container input {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+.account-container button {
+  padding: 8px;
+  margin-top: 15px;
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.account-container button:hover {
+  background: #ffffffca;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+/* Edit Account Ends Here */
+
 /* Responsiveness Starts Here */
 
 /* Phone Responsiveness */
