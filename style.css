@@ -309,6 +309,10 @@ input {
   border: 2px solid rgb(2, 139, 253);
 }
 
+.main-container .content .content-card .card-end button.liked {
+  border: 2px solid rgb(2, 139, 253);
+}
+
 .main-container .content .content-card .card-end button:active {
   border: 2px solid rgb(2, 139, 253);
 }

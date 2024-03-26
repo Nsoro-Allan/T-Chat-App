@@ -56,6 +56,7 @@ include("sessions.php");
                 while($row=mysqli_fetch_assoc($select)){
                 $post_date = $row['post_date'];
                 $user_id = $row['user_id'];
+                $like_count = $row['like_count'];
                 include("time_converter.php");
 
                 $view=$con->query("SELECT * FROM `users` WHERE `user_id`='$user_id'");
@@ -73,10 +74,10 @@ include("sessions.php");
                     <p><?php echo $row['post_content'];?></p>
                 </div>
                 <div class="card-end">
-                    <button>&#128077; 0</button>
-                    <button>&#128514; 0</button>
-                    <button>&#128293; 0</button>
-                    <button>&#128078; 0</button>
+                    <button>&#128077; <?php echo $like_count;?></button>
+                    <button>&#128514;</button>
+                    <button>&#128293;</button>
+                    <button>&#128078;</button>
                 </div>
             </div>
             <?php        
