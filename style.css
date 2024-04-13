@@ -300,6 +300,7 @@ input {
   border: 2px solid #fff;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
+  color:#fff;
 }
 
 .main-container .content .content-card .card-end button:hover {
