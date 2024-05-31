@@ -85,6 +85,7 @@ $tel=$row['tel'];
             else{
                 echo"
                 <div class='err'>
+                <img src='./imgs/no_posts.webp'>
                 <h1>No Posts Available...</h1>
                 </div>
                 ";

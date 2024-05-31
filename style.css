@@ -29,6 +29,15 @@ input {
   justify-content: center;
 }
 
+.err img{
+  width: 60%;
+}
+
+.err h1{
+  margin-top: -10px;
+  font-size: 2rem;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: 12px;
