@@ -55,7 +55,6 @@ $tel=$row['tel'];
                 while($row=mysqli_fetch_assoc($select)){
                 $post_date = $row['post_date'];
                 $user_id = $row['user_id'];
-                $like_count = $row['like_count'];
                 include("time_converter.php");
 
                 $view=$con->query("SELECT * FROM `users` WHERE `user_id`='$user_id'");
@@ -74,7 +73,7 @@ $tel=$row['tel'];
                     <p><?php echo $row['post_content'];?></p>
                 </div>
                 <div class="card-end">
-                    <button>&#128077; <?php echo $like_count;?></button>
+                    <button>&#128077; 0</button>
                     <button>&#128514; 0</button>
                     <button>&#128293; 0</button>
                     <button>&#128078; 0</button>
@@ -84,7 +83,11 @@ $tel=$row['tel'];
                 }
             }
             else{
-                echo"<h1>No Posts Available...</h1>";
+                echo"
+                <div class='err'>
+                <h1>No Posts Available...</h1>
+                </div>
+                ";
             }
             ?>
         </div>
