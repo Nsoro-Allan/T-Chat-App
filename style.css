@@ -382,7 +382,6 @@ input {
   transform: translate(-50%);
   height: 96dvh;
   padding: 10px 20px;
-  /* border: 2px solid #fff; */
   display: flex;
   flex-direction: column;
   align-items: center;
