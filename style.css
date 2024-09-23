@@ -22,18 +22,18 @@ input {
   color: #fff;
 }
 
-.err{
+.err {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.err img{
+.err img {
   width: 60%;
 }
 
-.err h1{
+.err h1 {
   margin-top: -10px;
   font-size: 2rem;
 }
@@ -180,8 +180,9 @@ input {
 }
 
 .main-container .content .account-container .account-head img {
-  width: 45%;
-  border-radius: 10px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
 }
 
 .main-container .content .account-container .account-head h4 {
@@ -315,7 +316,7 @@ input {
   border: 2px solid #fff;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
-  color:#fff;
+  color: #fff;
 }
 
 .main-container .content .content-card .card-end button:hover {
